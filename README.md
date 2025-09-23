@@ -1,6 +1,8 @@
 # to-do-list-api
 Create a simple web app for a to-list using python's fastapi module.
 
+```
+
 my-todo-app/
 ├── backend/          # FastAPI backend code + virtual environment
 │   ├── main.py       # Your FastAPI app code
@@ -11,6 +13,6 @@ my-todo-app/
     ├── package.json  # Frontend dependencies & scripts
     └── vite.config.js # Vite config file
 
-
+```
 
 Work in progress...
