@@ -243,7 +243,8 @@ Now I'm able to run a frontend using vibe-coded react and a python backend. Howe
 The API is part of the backend, but not the whole. The data from the to-do list is stored in memory at the top of main.py.
 This is a peak at what the to-do list actually looks like:
 
-<img width="1322" height="650" alt="{1DDC3764-4B14-4DB7-B748-BB28E5F3B3B7}" src="https://github.com/user-attachments/assets/a8a5e42e-1920-48d4-b099-a5dce09256f7" />
+
+<img width="1913" height="903" alt="{4F518EA2-EC8C-4E9D-9499-C499BCECE2D3}" src="https://github.com/user-attachments/assets/05949291-57f1-4e53-a8d5-e860906a0fe3" />
 
 
 #### What's in my Backend Right Now
