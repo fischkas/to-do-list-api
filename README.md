@@ -40,6 +40,8 @@ Files end with / if folder, else just file names
 Open Command Prompt
 
 Navigate to your working directory in windows cmd, for example
+
+```
 cd C:\Users\YourName\Documents
 mkdir my-todo-app
 cd my-todo-app
@@ -49,11 +51,13 @@ Create Python virtual environment and activate it
 python -m venv venv
 venv\Scripts\activate.bat
 python -m venv venv — creates a folder called venv with the virtual environment.
+```
 
-venv\Scripts\activate.bat — activates the virtual environment in CMD.
+```venv\Scripts\activate.bat``` — activates the virtual environment in CMD.
 
 If activation worked, your prompt changes to something like:
-(venv) C:\Users\YourName\Documents\my-todo-app\backend>pip install fastapi uvicorn
+```(venv) C:\Users\YourName\Documents\my-todo-app\backend> pip install fastapi uvicorn```
+
 Create main.py backend API file to define the endpoints!
 We don't connect to a database just yet, as we are trying to understand the API and don't want to get bugged into setting up a database with SQLlite (that's for later!!)
 
@@ -136,11 +140,15 @@ Open your browser to:
 Open a new terminal (don’t close the one running your API)
 
 Open a new terminal window (not a new tab) and run:
+
+```
 cd C:\Users\YourName\Documents\my-todo-app
 npx create-vite@latest frontend --template react
 cd frontend
 npm install
 npm run dev
+```
+
 Your frontend will start at:
 
 [http://localhost:5173](http://localhost:5173)
@@ -214,12 +222,16 @@ export default App
 ### 4. Summary of your workflow
 
 Use one Command Prompt window for backend:
+
+```
 cd my-todo-app\backend
 venv\Scripts\activate.bat
 uvicorn main:app --reload
 Use another Command Prompt window for frontend:
 cd my-todo-app\frontend
 npm run dev
+```
+
 ### Succes! 
 
 Now I'm able to run a frontend using vibe-coded react and a backend. However, this is not a full backend yet since the backend only contains the main.py file which is were we define the API.
