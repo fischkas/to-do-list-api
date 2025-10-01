@@ -232,7 +232,10 @@ Use one Command Prompt window for backend:
 cd my-todo-app\backend
 venv\Scripts\activate.bat
 uvicorn main:app --reload
+```
 Use another Command Prompt window for frontend:
+
+```cmd
 cd my-todo-app\frontend
 npm run dev
 ```
