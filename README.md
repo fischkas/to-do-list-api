@@ -6,6 +6,7 @@ Let's define the project structure first. This helps keep your code organized.
 
 
 Example Project Structure:
+```
 my-todo-app/
 ├── backend/          # FastAPI backend code + virtual environment
 │   ├── main.py       # Your FastAPI app code
@@ -15,6 +16,7 @@ my-todo-app/
     ├── public/       # Static files
     ├── package.json  # Frontend dependencies & scripts
     └── vite.config.js # Vite config file
+```
 ### What you should do:
 
 Inside backend/, create your Python virtual environment (venv) and your main backend file main.py
