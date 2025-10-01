@@ -41,7 +41,7 @@ Open Command Prompt
 
 Navigate to your working directory in windows cmd, for example
 
-```bash
+```cmd
 cd C:\Users\YourName\Documents
 mkdir my-todo-app
 cd my-todo-app
