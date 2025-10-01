@@ -239,8 +239,12 @@ npm run dev
 
 ### Succes! 
 
-Now I'm able to run a frontend using vibe-coded react and a backend. However, this is not a full backend yet since the backend only contains the main.py file which is were we define the API.
+Now I'm able to run a frontend using vibe-coded react and a python backend. However, this is not a full backend yet since the backend only contains the main.py file which is were we define the API.
 The API is part of the backend, but not the whole. The data from the to-do list is stored in memory at the top of main.py.
+This is a peak at what the to-do list actually looks like:
+
+<img width="1322" height="650" alt="{1DDC3764-4B14-4DB7-B748-BB28E5F3B3B7}" src="https://github.com/user-attachments/assets/a8a5e42e-1920-48d4-b099-a5dce09256f7" />
+
 
 #### What's in my Backend Right Now
 
@@ -250,9 +254,3 @@ The API is part of the backend, but not the whole. The data from the to-do list 
 | **Business logic**       | Code that adds/removes items          | Inside the same functions                           |
 | **In-memory data store** | Your `todos = []` list                | At the top of `main.py`                             |
 | **Server**               | FastAPI app + Uvicorn server          | Run via `uvicorn main:app --reload`                 |
-
-
-
-<img width="1322" height="650" alt="{1DDC3764-4B14-4DB7-B748-BB28E5F3B3B7}" src="https://github.com/user-attachments/assets/a8a5e42e-1920-48d4-b099-a5dce09256f7" />
-
-
