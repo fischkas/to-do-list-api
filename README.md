@@ -240,7 +240,7 @@ cd my-todo-app\frontend
 npm run dev
 ```
 
-### Succes! 
+### It's live!
 
 Now I'm able to run a frontend using vibe-coded react and a python backend. However, this is not a full backend yet since the backend only contains the main.py file which is were we define the API.
 The API is part of the backend, but not the whole. The data from the to-do list is stored in memory at the top of main.py.
@@ -250,7 +250,7 @@ This is a peak at what the to-do list actually looks like:
 <img width="1913" height="903" alt="{4F518EA2-EC8C-4E9D-9499-C499BCECE2D3}" src="https://github.com/user-attachments/assets/05949291-57f1-4e53-a8d5-e860906a0fe3" />
 
 
-#### What's in my Backend Right Now
+#### What's in my backend Right Now?
 
 | Component                | Description                           | Where It Lives                                      |
 | ------------------------ | ------------------------------------- | --------------------------------------------------- |
@@ -258,3 +258,46 @@ This is a peak at what the to-do list actually looks like:
 | **Business logic**       | Code that adds/removes items          | Inside the same functions                           |
 | **In-memory data store** | Your `todos = []` list                | At the top of `main.py`                             |
 | **Server**               | FastAPI app + Uvicorn server          | Run via `uvicorn main:app --reload`                 |
+
+
+#### Does this scale?
+No! There are some important shortcomings that makes testing and maintaining harder.
+For example,
+
+```python
+@app.patch("/todos/{index}")
+def mark_todo_complete(index: int):
+	if 0 <= index < len(todos):
+		if todos[index].completed != True:
+			todos[index].completed = True
+			return {"message": "Todo marked as complete"}
+		else:
+			return {"message": "Todo already marked as complete"}
+	else:
+		return {"error": "Invalid index"}
+```
+Does both routing and checks if the data is vald. This could be split into two functions handling routing and the service seperately.
+
+```python
+
+def mark_todo_complete(todo, index):
+	if 0 <= index < len(todos):
+		if todos[index].completed != True:
+			todos[index].completed = True
+			return {"message": "Todo marked as complete"}
+		else:
+			return {"message": "Todo already marked as complete"}
+	else:
+		return {"error": "Invalid index"}
+
+@app.patch("/todos/{index}")
+def check_mark_route(index: int):
+	try:
+		mark_todo_complete(index)
+	except IndexError:
+        raise HTTPException(status_code=404, detail="Todo not found")
+
+```
+
+
+
