@@ -299,5 +299,5 @@ def check_mark_route(index: int):
 
 ```
 
-
+This makes testing easier, since we don't have to fire up fastAPI for every test, as we can just test ```mark_todo_complete()``` as a standard python function.
 
