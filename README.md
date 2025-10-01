@@ -1,4 +1,4 @@
-# 🐍 Full Setup: Backend + Frontend with Python Environment on Windows CMD 🐍
+# 🐍 Full Setup: Frontend + Backend with Python's fastAPI 🐍
 
 ### 1. Project folder structure
 
