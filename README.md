@@ -1,6 +1,6 @@
 # 🐍 Full Setup: Backend + Frontend with Python Environment on Windows CMD 🐍
 
-### 1. Prepare your project folder structure
+### 1. Project folder structure
 
 Let's define the project structure first. This helps keep your code organized.
 
@@ -17,7 +17,7 @@ my-todo-app/
     ├── package.json  # Frontend dependencies & scripts
     └── vite.config.js # Vite config file
 ```
-### What you should do:
+### What to do:
 
 Inside backend/, create your Python virtual environment (venv) and your main backend file main.py
 
@@ -39,7 +39,7 @@ Files end with / if folder, else just file names
 
 Open Command Prompt
 
-Navigate to your working directory in windows cmd, for example
+Navigate to your working directory in windows cmd (in my case)
 
 ```cmd
 cd C:\Users\YourName\Documents
@@ -50,16 +50,17 @@ cd backend
 Create Python virtual environment and activate it
 python -m venv venv
 venv\Scripts\activate.bat
-python -m venv venv — creates a folder called venv with the virtual environment.
 ```
+
+```python -m venv venv``` — creates a folder called venv with the virtual environment.
 
 ```venv\Scripts\activate.bat``` — activates the virtual environment in CMD.
 
 If activation worked, your prompt changes to something like:
 ```(venv) C:\Users\YourName\Documents\my-todo-app\backend> pip install fastapi uvicorn```
 
-Create main.py backend API file to define the endpoints!
-We don't connect to a database just yet, as we are trying to understand the API and don't want to get bugged into setting up a database with SQLlite (that's for later!!)
+Create a file called main.py, which is my backend API file to define the endpoints!
+We don't connect to a database just yet, as I'm just trying to understand the API and don't want to get bugged into setting up a database with SQLlite (that's for later!!)
 
 In backend/ folder, create main.py with this content:
 
@@ -217,8 +218,9 @@ function App() {
     </div>
   )
 }
-```
 export default App
+```
+
 ### 4. Summary of your workflow
 
 Use one Command Prompt window for backend:
