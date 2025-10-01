@@ -1,4 +1,4 @@
-# 🐍 Full Setup: Frontend + Backend with Python's fastAPI 🐍
+# 🐍 Prototype: Frontend + Backend with Python's fastAPI 🐍
 
 ### 1. Project folder structure
 
