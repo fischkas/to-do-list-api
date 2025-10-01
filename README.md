@@ -141,7 +141,7 @@ Open a new terminal (don’t close the one running your API)
 
 Open a new terminal window (not a new tab) and run:
 
-```
+```cmd
 cd C:\Users\YourName\Documents\my-todo-app
 npx create-vite@latest frontend --template react
 cd frontend
@@ -223,7 +223,7 @@ export default App
 
 Use one Command Prompt window for backend:
 
-```
+```cmd
 cd my-todo-app\backend
 venv\Scripts\activate.bat
 uvicorn main:app --reload
