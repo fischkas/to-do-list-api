@@ -146,7 +146,8 @@ Your frontend will start at:
 Modify frontend/src/App.jsx
 
 Replace the contents of App.jsx with:
-# Javascript
+
+```javascript
 
 import { useEffect, useState } from 'react'
 
@@ -189,7 +190,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🧠📌 Kasper's to-do list</h1>
+      <h1>🧠📌 My to-do list</h1>
       <input value={title} onChange={e => setTitle(e.target.value)} placeholder="New task..." />
       <button onClick={addTodo}>Add</button>
       <ul>
@@ -206,7 +207,7 @@ function App() {
     </div>
   )
 }
-
+```
 export default App
 ### 4. Summary of your workflow
 
