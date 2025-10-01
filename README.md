@@ -131,7 +131,9 @@ def mark_todo_complete(index: int):
 ```
 
 Run your FastAPI backend server
+```
 uvicorn main:app --reload
+```
 Open your browser to:
 
 [http://localhost:8000/docs](http://localhost:8000/docs)
