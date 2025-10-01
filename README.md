@@ -252,7 +252,6 @@ The API is part of the backend, but not the whole. The data from the to-do list 
 | **Server**               | FastAPI app + Uvicorn server          | Run via `uvicorn main:app --reload`                 |
 
 
-<img width="1858" height="726" alt="{36BAC64E-3422-4903-9D45-A42319229C40}" src="https://github.com/user-attachments/assets/8570f271-cea4-4255-a3a7-c3eb505e77bb" />
+![Uploading {1DDC3764-4B14-4DB7-B748-BB28E5F3B3B7}.png…]()
 
-<img width="1554" height="809" alt="{C4C6960E-0DCA-410D-9CC5-56E44D579ACC}" src="https://github.com/user-attachments/assets/6b4524d5-e9d2-4213-aaaf-cabaddb43281" />
 
